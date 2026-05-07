@@ -1,0 +1,62 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: Latest
+
+# Indentation
+UseTab: ForIndentation
+TabWidth: 4
+IndentWidth: 4
+
+# Line Length
+# The style guide says "No hard limit. Keep lines reasonable and readable."
+ColumnLimit: 0
+
+# Brace Style (Allman, but no indent inside extern "C" or namespace blocks)
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: true
+  AfterClass: true
+  AfterControlStatement: Always
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeElse: true
+  BeforeWhile: true
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+IndentExternBlock: NoIndent
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortEnumsOnASingleLine: false
+
+# Whitespace
+SpaceBeforeParens: ControlStatements
+SpaceBeforeAssignmentOperators: true
+SpaceAfterCStyleCast: false
+SpaceInEmptyParentheses: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+
+# Pointer alignment: binds to type (uint8_t* buffer)
+PointerAlignment: Left
+
+# Wrapping and Alignment
+AlignAfterOpenBracket: Align
+AlignConsecutiveMacros: Consecutive
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignTrailingComments: true
+
+# Includes: do NOT auto-sort (manual grouping is intentional)
+SortIncludes: false
+
+# End of file
+KeepEmptyLinesAtEOF: true
+---
